@@ -1,15 +1,16 @@
 name: Release Workflow
 
-on:
-  schedule:
-    - cron: "0 0 * * 2" # Run at 00:00 every Tuesday
-  workflow_dispatch:
-    inputs:
-      versionType:
-        description: "Version update type (major, minor, patch)"
-        required: true
-        default: "minor"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   schedule:
+#     - cron: "0 0 * * 2" # Run at 00:00 every Tuesday
+#   workflow_dispatch:
+#     inputs:
+#       versionType:
+#         description: "Version update type (major, minor, patch)"
+#         required: true
+#         default: "minor"
+# 
 permissions:
   contents: write
   pull-requests: write

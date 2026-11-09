@@ -1,13 +1,14 @@
 name: Deploy main
 
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - "ui/**"
-      - "server/**"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths:
+#       - "ui/**"
+#       - "server/**"
+# 
 jobs:
   deploy:
     runs-on: ubuntu-latest

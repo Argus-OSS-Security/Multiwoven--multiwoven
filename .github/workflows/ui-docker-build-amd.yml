@@ -1,12 +1,13 @@
 name: frontend-docker-build (amd64)
 
-on:
-  workflow_run:
-    workflows: ["frontend-ci"]
-    branches: [main]
-    types:
-      - completed
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_run:
+#     workflows: ["frontend-ci"]
+#     branches: [main]
+#     types:
+#       - completed
+# 
 env:
   IMAGE_NAME: multiwoven/multiwoven-ui
   IMAGE_TAG: edge

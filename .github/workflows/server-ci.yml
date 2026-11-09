@@ -1,16 +1,17 @@
 name: server-ci
 
-on:
-  push:
-    branches: [main]
-    paths:
-      - "server/**"
-  pull_request:
-    types: [opened, synchronize, reopened]
-    branches: [main]
-    paths:
-      - "server/**"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [main]
+#     paths:
+#       - "server/**"
+#   pull_request:
+#     types: [opened, synchronize, reopened]
+#     branches: [main]
+#     paths:
+#       - "server/**"
+# 
 permissions:
   contents: read
   id-token: write #important

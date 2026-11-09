@@ -1,17 +1,18 @@
 name: UI - Validate Workflow
 
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - "ui/**"
-  pull_request:
-    branches:
-      - main
-    paths:
-      - "ui/**"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths:
+#       - "ui/**"
+#   pull_request:
+#     branches:
+#       - main
+#     paths:
+#       - "ui/**"
+# 
 jobs:
   build:
     runs-on: ubuntu-latest

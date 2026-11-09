@@ -1,14 +1,15 @@
 name: Build and push Multiwoven CE UI docker image to Docker Hub (amd64)
 
-on:
-  workflow_dispatch:
-    inputs:
-      release_tag:
-        description: "Release tag to build"
-        required: true
-  repository_dispatch:
-    types: [trigger-image-push]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       release_tag:
+#         description: "Release tag to build"
+#         required: true
+#   repository_dispatch:
+#     types: [trigger-image-push]
+# 
 jobs:
   docker-hub-push-on-merge:
     runs-on: ubuntu-latest

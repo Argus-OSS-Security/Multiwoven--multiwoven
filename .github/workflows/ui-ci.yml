@@ -1,16 +1,17 @@
 name: frontend-ci
 
-on:
-  push:
-    branches: [main]
-    paths:
-      - "ui/**"
-  pull_request:
-    types: [opened, synchronize, reopened]
-    branches: [main]
-    paths:
-      - "ui/**"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [main]
+#     paths:
+#       - "ui/**"
+#   pull_request:
+#     types: [opened, synchronize, reopened]
+#     branches: [main]
+#     paths:
+#       - "ui/**"
+# 
 permissions:
   contents: read
   id-token: write

@@ -1,18 +1,19 @@
 name: CI - Integrations
 
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - "integrations/**"
-
-  pull_request:
-    types: [opened, synchronize, reopened]
-    branches: [main]
-    paths:
-      - "integrations/**"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths:
+#       - "integrations/**"
+# 
+#   pull_request:
+#     types: [opened, synchronize, reopened]
+#     branches: [main]
+#     paths:
+#       - "integrations/**"
+# 
 permissions:
   contents: read
   id-token: write

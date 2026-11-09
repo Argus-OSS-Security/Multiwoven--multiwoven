@@ -1,16 +1,17 @@
 name: Ruby - Integrations
 
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - "integrations/**"
-
-  pull_request:
-    paths:
-      - "integrations/**"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths:
+#       - "integrations/**"
+# 
+#   pull_request:
+#     paths:
+#       - "integrations/**"
+# 
 jobs:
   build:
     runs-on: ubuntu-latest

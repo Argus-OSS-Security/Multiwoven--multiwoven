@@ -1,11 +1,12 @@
 name: Build and push Multiwoven UI docker image to Docker Hub (arm64)
 
-on:
-  workflow_dispatch:
-  push:
-    tags:
-      - v*
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#   push:
+#     tags:
+#       - v*
+# 
 jobs:
   docker-hub-push-on-merge:
     runs-on: [self-hosted, Linux, ARM64]

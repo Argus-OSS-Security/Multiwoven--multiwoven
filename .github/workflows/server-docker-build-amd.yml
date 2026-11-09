@@ -1,12 +1,13 @@
 name: server-docker-build (AMD)
 
-on:
-  workflow_run:
-    workflows: ["server-ci"]
-    branches: [main]
-    types:
-      - completed
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_run:
+#     workflows: ["server-ci"]
+#     branches: [main]
+#     types:
+#       - completed
+# 
 env:
   IMAGE_NAME: multiwoven/multiwoven-server
   IMAGE_TAG: edge
